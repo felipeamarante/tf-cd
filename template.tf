@@ -14,7 +14,6 @@ variable "public_subnet_cidr" {
 
 variable "ec2_key_pair" {
     description = "Your EC2 Key Pair"
-    default = "your_key_here"
 }
 
 data "aws_region" "current_region" {
