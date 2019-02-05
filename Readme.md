@@ -18,13 +18,13 @@
   ## Steps
 
   - Creating the First working scenario:
-   - Clone the repository
-   - `terraform init`
-   - `terraform apply`
+    - Clone the repository
+    - `terraform init`
+    - `terraform apply`
 
 
   - Switching between troubleshooting scenarios:
-   - `git checkout <branchname>`
-   - `terraform apply`
+    - `git checkout <branchname>`
+    - `terraform apply`
 
    ***
