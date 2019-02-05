@@ -127,7 +127,7 @@ resource "aws_iam_role" "CodeDeployInstanceRole" {
         {
             "Action": "sts:AssumeRole",
             "Principal": {
-               "Service": "ec2.amazonaws.com"
+               "Service": "codedeploy.amazonaws.com"
             },
             "Effect": "Allow",
             "Sid": ""
@@ -166,7 +166,6 @@ resource "aws_autoscaling_group" "CDAutoScalingGroup" {
   vpc_zone_identifier       = ["${aws_subnet.CDPublicSubnet.id}"]
   load_balancers            = ["${aws_elb.CDELB.id}"]
 }
-
 
 resource "aws_launch_configuration" "CDLaunchConfig" {
   name_prefix   = "CD"
