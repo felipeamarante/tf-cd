@@ -1,3 +1,4 @@
 #!/bin/bash
 
-rm -f /var/www/html/index.html
+echo "muhahaha"
+#rm -f /var/www/html/index.html
